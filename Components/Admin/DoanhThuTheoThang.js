@@ -40,7 +40,7 @@ const DoanhThuTheoThang = () => {
   useEffect(() => {
     // danh sách thuốc sắp hết hạn
     fetch(
-      `https://khoaluanquanlynhathuoclt99.lol/quan-ly/thong-ke/thong-ke-doanh-thu-theo-thang-trong-nam?nam=${2023}`
+      `https://nhathuoclt99pharmacity.click/quan-ly/thong-ke/thong-ke-doanh-thu-theo-thang-trong-nam?nam=${2023}`
     )
       .then((response) => response.json())
       .then((data) => {

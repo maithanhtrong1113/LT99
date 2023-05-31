@@ -6,6 +6,7 @@ import ModalDiaChi from "./ModalDiaChi";
 import { MdLocationPin } from "react-icons/md";
 import khachHang from "@/pages/admin/khachHang";
 import { kiemTraEmail } from "../utils/kiemTraEmail";
+import { toast } from "react-toastify";
 
 function ModalAll(props) {
   const {
@@ -72,7 +73,7 @@ function ModalAll(props) {
 
     //thêm khách hàng vào  csdl
     fetch(
-      "https://khoaluanquanlynhathuoclt99.lol/nhan-vien/quan-ly-khach-hang/khach-hang",
+      "https://nhathuoclt99pharmacity.click/nhan-vien/quan-ly-khach-hang/khach-hang",
       {
         method: "POST",
         headers: {
@@ -90,6 +91,16 @@ function ModalAll(props) {
       .then((results) => {
         setKhachHangFull(results);
         props.sendDataToCheckOut(results);
+      })
+      .catch(() => {
+        toast.error(
+          "Bạn đã từng mua hàng, hãy nhập số điện thoại để lấy thông tin",
+          {
+            position: toast.POSITION.TOP_RIGHT,
+            autoClose: 3000,
+            theme: "light",
+          }
+        );
       });
     toggle();
   };
@@ -166,7 +177,7 @@ function ModalAll(props) {
     if (searchTerm1.length > 0) {
       const newTimeoutId1 = setTimeout(() => {
         fetch(
-          `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/quan-ly-khach-hang/tim-khach-hang?keyword=${encodeURIComponent(
+          `https://nhathuoclt99pharmacity.click/nhan-vien/quan-ly-khach-hang/tim-khach-hang?keyword=${encodeURIComponent(
             searchTerm1
           )}`
         )
@@ -214,7 +225,7 @@ function ModalAll(props) {
   };
   const changein4Customer = () => {
     fetch(
-      `https://khoaluanquanlynhathuoclt99.lol/khach-hang/thong-tin-khach-hang/${khachHangFull.maKhachHang}/cap-nhat-thong-tin-ca-nhan`,
+      `https://nhathuoclt99pharmacity.click/khach-hang/thong-tin-khach-hang/${khachHangFull.maKhachHang}/cap-nhat-thong-tin-ca-nhan`,
       {
         method: "PUT",
         headers: {

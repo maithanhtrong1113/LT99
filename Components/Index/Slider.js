@@ -3,6 +3,7 @@ import React, { Fragment, useEffect, useState } from "react";
 const Slider = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
+    console.log(process.env.NEXT_PUBLIC_URL);
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);

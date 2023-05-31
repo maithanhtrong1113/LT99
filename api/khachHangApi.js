@@ -1,14 +1,14 @@
 import { toast } from "react-toastify";
 export const getAllKhachHang = async () => {
   const response = await fetch(
-    `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/quan-ly-khach-hang/danh-sach-khach-hang`
+    `https://nhathuoclt99pharmacity.click/nhan-vien/quan-ly-khach-hang/danh-sach-khach-hang`
   );
   const data = await response.json();
   return data;
 };
 export const themKhachHang = async (data) => {
   const response = await fetch(
-    "https://khoaluanquanlynhathuoclt99.lol/nhan-vien/quan-ly-khach-hang/khach-hang ",
+    "https://nhathuoclt99pharmacity.click/nhan-vien/quan-ly-khach-hang/khach-hang ",
     {
       method: "POST",
       headers: {

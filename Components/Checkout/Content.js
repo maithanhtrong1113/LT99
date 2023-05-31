@@ -47,7 +47,7 @@ const Content = () => {
       });
       console.log(thongTinKhachHang.diaChi);
       fetch(
-        "https://khoaluanquanlynhathuoclt99.lol/khach-hang/don-hang/tao-don-hang",
+        "https://nhathuoclt99pharmacity.click/khach-hang/don-hang/tao-don-hang",
         {
           method: "POST",
           headers: {
@@ -434,12 +434,13 @@ const Content = () => {
                   <textarea className="customer-note border-none rounded shadow w-100"></textarea>
                 </div>
                 {totalPriceCartt > 0 && (
-                  <div className="row py-3 px-3 fixed-bottom bg-light">
+                  <div className="row py-3 px-3 fixed-bottom bg-light d-flex align-items-center">
                     <div className="col-6">
                       <p className="mb-0 fw-bold">Thành tiền</p>
                       <p className="mb-0 fw-bold text-info fs-24">
-                        {VND.format(totalPriceCartt + giaVanChuyen)}
+                        {VND.format(totalPriceCartt * 1.1)}
                       </p>
+                      <p className="fs-14">{`(Bao gồm VAT)`}</p>
                     </div>
                     <div className="col-6">
                       <Link

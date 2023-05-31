@@ -9,7 +9,7 @@ function CountdownTimer() {
   const [dsThuoc, setDsThuoc] = useState([]);
   useEffect(() => {
     fetch(
-      "https://khoaluanquanlynhathuoclt99.lol/khach-hang/xem-thuoc/danh-sach-thuoc"
+      "https://nhathuoclt99pharmacity.click/khach-hang/xem-thuoc/danh-sach-thuoc"
     )
       .then((response) => {
         if (!response.ok) {
@@ -77,11 +77,11 @@ function CountdownTimer() {
             )}
             {windowWidth < 1000 && (
               <div className="row text-dark d-flex justify-content-between text-white bg-blue-dark rounded  shadow">
-                <div className="d-flex col-12 flex-column  justify-content-start px-0">
+                <div className="d-flex col-12 flex-column  justify-content-start px-4 pt-2">
                   <h4 className="fw-bold">00:00 - 23:59</h4>
                   <h6 className="fw-bold">Đang diễn ra</h6>
                 </div>
-                <div className="col-12 d-flex align-items-center px-0 mx-0 justify-content-start">
+                <div className="col-12 d-flex align-items-center px-0 mx-0 justify-content-start px-4">
                   <h6 className="fw-bold">Kết Thúc trong:</h6>
                   <h6 className="fw-bold mx-2 bg-dark p-3 rounded">{hours}</h6>
                   <h6 className="fw-bold mx-2 bg-dark p-3 rounded">

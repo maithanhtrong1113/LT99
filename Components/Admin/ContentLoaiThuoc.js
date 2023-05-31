@@ -38,7 +38,7 @@ const ContentLoaiThuoc = () => {
     if (searchTerm.length > 0) {
       const newTimeoutId = setTimeout(() => {
         fetch(
-          `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/thuoc-va-loai-thuoc/tim-loai-thuoc?keyword=${encodeURIComponent(
+          `https://nhathuoclt99pharmacity.click/nhan-vien/thuoc-va-loai-thuoc/tim-loai-thuoc?keyword=${encodeURIComponent(
             searchTerm
           )}`
         )
@@ -53,7 +53,7 @@ const ContentLoaiThuoc = () => {
       setTimeoutId(newTimeoutId);
     } else {
       fetch(
-        "https://khoaluanquanlynhathuoclt99.lol/nhan-vien/thuoc-va-loai-thuoc/loai-thuoc/"
+        "https://nhathuoclt99pharmacity.click/nhan-vien/thuoc-va-loai-thuoc/loai-thuoc/"
       )
         .then((response) => response.json())
         .then((data) => {

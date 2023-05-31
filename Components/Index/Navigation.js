@@ -93,7 +93,7 @@ const Navigation = () => {
     if (searchTerm.length > 0) {
       const newTimeoutId = setTimeout(() => {
         fetch(
-          `https://khoaluanquanlynhathuoclt99.lol/khach-hang/xem-thuoc/tim-thuoc?keyword=${encodeURIComponent(
+          `https://nhathuoclt99pharmacity.click/khach-hang/xem-thuoc/tim-thuoc?keyword=${encodeURIComponent(
             searchTerm
           )}`
         )
@@ -132,7 +132,7 @@ const Navigation = () => {
                 className="btn border w-100 d-flex justify-content-evenly align-items-center bg-white "
                 onClick={toggle}
               >
-                <FaThList className="text-dark" />
+                <FaThList className="text-blue-pastel" />
               </div>
             </div>
             {!isOpen && (
@@ -157,7 +157,7 @@ const Navigation = () => {
                   value={searchTerm}
                   onChange={handleInputChange}
                 />
-                <BsSearch className="position-absolute localIconSearch1" />
+                <BsSearch className="position-absolute localIconSearch1 text-blue-pastel" />
               </div>
             </div>
             <div
@@ -167,7 +167,7 @@ const Navigation = () => {
             >
               <div className="p-3 border rounded bg-white w-100 shadow vh-100">
                 <button className="btn bg-blue-dark mb-2">
-                  <BsArrowLeft />
+                  <BsArrowLeft className="text-white" />
                 </button>
                 <br />
                 {dsThuoc.length === 0 && searchTerm !== null && (
@@ -195,7 +195,7 @@ const Navigation = () => {
                 href="/cart"
                 className="btn d-flex align-items-center border-none text-white bg-white position-relative px-3"
               >
-                <FaShoppingCart className="text-dark" />
+                <FaShoppingCart className="text-blue-pastel" />
                 <span className="px-1  text-white position-absolute localCart  bg-cart">
                   {cartQuantity}
                 </span>

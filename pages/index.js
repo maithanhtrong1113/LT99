@@ -9,6 +9,7 @@ import NotShowMess from "@/Components/utils/showMess";
 import LoadingScreen from "@/Components/Index/LoadingScreen";
 const index = (props) => {
   NotShowMess();
+
   return (
     <Fragment>
       <LoadingScreen>
