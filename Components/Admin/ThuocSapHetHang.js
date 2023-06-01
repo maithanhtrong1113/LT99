@@ -51,6 +51,11 @@ const ThuocSapHetHang = () => {
           display: false,
         },
       },
+      y: {
+        ticks: {
+          stepSize: 1,
+        },
+      },
     },
   };
 

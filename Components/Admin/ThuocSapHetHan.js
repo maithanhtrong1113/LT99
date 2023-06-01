@@ -88,11 +88,6 @@ const ThuocSapHetHan = () => {
     labels,
     datasets: [
       {
-        label: "Số ngày còn lại",
-        data: soNgayConLai,
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
-      },
-      {
         label: "Số lượng thuốc sắp hết hạn",
         data: soLuongConLai,
         backgroundColor: "rgb(233, 233, 110,0.5)",

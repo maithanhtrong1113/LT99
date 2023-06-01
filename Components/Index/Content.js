@@ -13,7 +13,7 @@ const Content = (props) => {
     <Container fluid>
       <Slider />
       <ListProduct />
-      <ListCard />
+      <ListCard data={props.data} />
       <ListCard1 />
       <CountdownTimer />
     </Container>
