@@ -20,7 +20,7 @@ function ModalXemThuoc(props) {
   const [thuoc, setThuoc] = useState({});
   useEffect(() => {
     fetch(
-      `https://nhathuoclt99pharmacity.click/nhan-vien/thuoc-va-loai-thuoc/thuoc/${props.thuoc.maThuoc}`
+      `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/thuoc-va-loai-thuoc/thuoc/${props.thuoc.maThuoc}`
     )
       .then((response) => response.json())
       .then((results) => {

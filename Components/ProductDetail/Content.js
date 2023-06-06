@@ -21,7 +21,7 @@ const Content = () => {
 
   useEffect(() => {
     fetch(
-      `https://nhathuoclt99pharmacity.click/nhan-vien/thuoc-va-loai-thuoc/thuoc/${router.query.id}`
+      `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/thuoc-va-loai-thuoc/thuoc/${router.query.id}`
     )
       .then((response) => {
         if (!response.ok) {

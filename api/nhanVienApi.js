@@ -3,21 +3,21 @@ import { toast } from "react-toastify";
 
 export const getNhanVienTheoCaLamViec = async (maCaLam) => {
   const response = await fetch(
-    `https://nhathuoclt99pharmacity.click/quan-ly/ca-lam-viec/${maCaLam}`
+    `https://khoaluanquanlynhathuoclt99.lol/quan-ly/ca-lam-viec/${maCaLam}`
   );
   const data = await response.json();
   return data;
 };
 export const getAllNhanVien = async () => {
   const response = await fetch(
-    `https://nhathuoclt99pharmacity.click/quan-ly/danh-sach-nhan-vien`
+    `https://khoaluanquanlynhathuoclt99.lol/quan-ly/danh-sach-nhan-vien`
   );
   const data = await response.json();
   return data;
 };
 export const chinhSuaNhanVienByQuanLy = async (data) => {
   const response = await fetch(
-    `https://nhathuoclt99pharmacity.click/quan-ly/nhan-vien/${data.maNhanVien}`,
+    `https://khoaluanquanlynhathuoclt99.lol/quan-ly/nhan-vien/${data.maNhanVien}`,
     {
       method: "PUT",
       headers: {
@@ -53,8 +53,8 @@ export const changePass = async (data, role) => {
   const id = localStorage.getItem("id");
   const url =
     role === 1
-      ? `https://nhathuoclt99pharmacity.click/quan-ly/doi-mat-khau/${id}`
-      : `https://nhathuoclt99pharmacity.click/nhan-vien/doi-mat-khau/${id}`;
+      ? `https://khoaluanquanlynhathuoclt99.lol/quan-ly/doi-mat-khau/${id}`
+      : `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/doi-mat-khau/${id}`;
   const response = await fetch(`${url}`, {
     method: "PUT",
     headers: {
@@ -85,7 +85,7 @@ export const changePass = async (data, role) => {
 
 export const chinhSuaThongTinCaNhan = async (data) => {
   const response = await fetch(
-    `https://nhathuoclt99pharmacity.click/quan-ly/cap-nhat-thong-tin-ca-nhan/${data.maNhanVien}`,
+    `https://khoaluanquanlynhathuoclt99.lol/quan-ly/cap-nhat-thong-tin-ca-nhan/${data.maNhanVien}`,
     {
       method: "PUT",
       headers: {

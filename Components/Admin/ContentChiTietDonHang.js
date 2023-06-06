@@ -11,7 +11,7 @@ const ContentChiTietDonHang = () => {
   const [detail, setDetails] = useState([]);
   useEffect(() => {
     fetch(
-      `https://nhathuoclt99pharmacity.click/nhan-vien/don-hang-online/${id}`
+      `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/don-hang-online/${id}`
     )
       .then((response) => response.json())
       .then((data) => {

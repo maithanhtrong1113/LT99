@@ -41,7 +41,7 @@ const index = () => {
   }
   //Thêm nhân viên và tạo tài khoản
   const addNhanVienSubmit = (data) => {
-    fetch("https://nhathuoclt99pharmacity.click/quan-ly/nhan-vien", {
+    fetch("https://khoaluanquanlynhathuoclt99.lol/quan-ly/nhan-vien", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -99,7 +99,7 @@ const index = () => {
     if (searchTerm.length > 0) {
       const newTimeoutId = setTimeout(() => {
         fetch(
-          `https://nhathuoclt99pharmacity.click/quan-ly/nhan-vien/tim-kiem-nhan-vien?keyword=${encodeURIComponent(
+          `https://khoaluanquanlynhathuoclt99.lol/quan-ly/nhan-vien/tim-kiem-nhan-vien?keyword=${encodeURIComponent(
             searchTerm
           )}`
         )

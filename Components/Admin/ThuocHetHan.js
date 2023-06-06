@@ -63,7 +63,7 @@ const ThuocHetHan = () => {
   useEffect(() => {
     // danh sách thuốc sắp hết hạn
     fetch(
-      "https://nhathuoclt99pharmacity.click/quan-ly/thong-ke/thong-ke-thuoc-het-han"
+      "https://khoaluanquanlynhathuoclt99.lol/quan-ly/thong-ke/thong-ke-thuoc-het-han"
     )
       .then((response) => response.json())
       .then((data) => {

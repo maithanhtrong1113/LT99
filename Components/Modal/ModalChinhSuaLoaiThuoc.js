@@ -31,7 +31,7 @@ function ModalChinhSuaLoaiThuoc(props) {
   // lấy thông tin loại thuốc
   useEffect(() => {
     fetch(
-      `https://nhathuoclt99pharmacity.click/nhan-vien/thuoc-va-loai-thuoc/loai-thuoc/${props.loaiThuoc.maLoai}`
+      `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/thuoc-va-loai-thuoc/loai-thuoc/${props.loaiThuoc.maLoai}`
     )
       .then((response) => response.json())
       .then((data) => {

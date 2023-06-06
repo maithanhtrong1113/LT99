@@ -73,7 +73,7 @@ function ModalAll(props) {
 
     //thêm khách hàng vào  csdl
     fetch(
-      "https://nhathuoclt99pharmacity.click/nhan-vien/quan-ly-khach-hang/khach-hang",
+      "https://khoaluanquanlynhathuoclt99.lol/nhan-vien/quan-ly-khach-hang/khach-hang",
       {
         method: "POST",
         headers: {
@@ -177,7 +177,7 @@ function ModalAll(props) {
     if (searchTerm1.length > 0) {
       const newTimeoutId1 = setTimeout(() => {
         fetch(
-          `https://nhathuoclt99pharmacity.click/nhan-vien/quan-ly-khach-hang/tim-khach-hang?keyword=${encodeURIComponent(
+          `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/quan-ly-khach-hang/tim-khach-hang?keyword=${encodeURIComponent(
             searchTerm1
           )}`
         )
@@ -225,7 +225,7 @@ function ModalAll(props) {
   };
   const changein4Customer = () => {
     fetch(
-      `https://nhathuoclt99pharmacity.click/khach-hang/thong-tin-khach-hang/${khachHangFull.maKhachHang}/cap-nhat-thong-tin-ca-nhan`,
+      `https://khoaluanquanlynhathuoclt99.lol/khach-hang/thong-tin-khach-hang/${khachHangFull.maKhachHang}/cap-nhat-thong-tin-ca-nhan`,
       {
         method: "PUT",
         headers: {

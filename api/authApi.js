@@ -2,7 +2,7 @@ import { toast } from "react-toastify";
 
 export const Login = async (data) => {
   const response = await fetch(
-    `https://nhathuoclt99pharmacity.click/api/login`,
+    `https://khoaluanquanlynhathuoclt99.lol/api/login`,
     {
       method: "POST",
       headers: {

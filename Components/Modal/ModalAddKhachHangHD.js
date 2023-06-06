@@ -19,7 +19,7 @@ function ModalAddKhachHangHD(props) {
   const onSubmit = (data) => {
     data.date = new Date(data.date).toLocaleDateString("vi-VN");
     fetch(
-      "https://nhathuoclt99pharmacity.click/nhan-vien/quan-ly-khach-hang/khach-hang",
+      "https://khoaluanquanlynhathuoclt99.lol/nhan-vien/quan-ly-khach-hang/khach-hang",
       {
         method: "POST",
         headers: {

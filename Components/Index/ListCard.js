@@ -19,7 +19,7 @@ const ListCard = (props) => {
   const [dsThuoc, setDsThuoc] = useState(props.data.slice(0, 4));
   // useEffect(() => {
   //   fetch(
-  //     "https://nhathuoclt99pharmacity.click/khach-hang/xem-thuoc/danh-sach-thuoc"
+  //     "https://khoaluanquanlynhathuoclt99.lol/khach-hang/xem-thuoc/danh-sach-thuoc"
   //   )
   //     .then((response) => {
   //       if (!response.ok) {

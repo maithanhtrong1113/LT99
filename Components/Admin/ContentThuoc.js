@@ -115,7 +115,7 @@ const ContentThuoc = () => {
     if (searchTerm.length > 0) {
       const newTimeoutId = setTimeout(() => {
         fetch(
-          `https://nhathuoclt99pharmacity.click/nhan-vien/thuoc-va-loai-thuoc/tim-thuoc?keyword=${encodeURIComponent(
+          `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/thuoc-va-loai-thuoc/tim-thuoc?keyword=${encodeURIComponent(
             searchTerm
           )}`
         )

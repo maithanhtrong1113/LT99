@@ -88,7 +88,7 @@ const ContentDonHang = () => {
     if (searchTerm.length > 0) {
       const newTimeoutId = setTimeout(() => {
         fetch(
-          `https://nhathuoclt99pharmacity.click/nhan-vien/don-hang-online/tim-don-hang?keyword=${encodeURIComponent(
+          `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/don-hang-online/tim-don-hang?keyword=${encodeURIComponent(
             searchTerm
           )}`
         )

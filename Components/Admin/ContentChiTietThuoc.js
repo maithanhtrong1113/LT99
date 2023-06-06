@@ -92,7 +92,7 @@ const ContentChiTietThuoc = (props) => {
     fetchDataNuocSanXuat();
     // danh sách loại thuốc truyền vào select option
     fetch(
-      "https://nhathuoclt99pharmacity.click/nhan-vien/thuoc-va-loai-thuoc/loai-thuoc/"
+      "https://khoaluanquanlynhathuoclt99.lol/nhan-vien/thuoc-va-loai-thuoc/loai-thuoc/"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -101,7 +101,7 @@ const ContentChiTietThuoc = (props) => {
       .catch((error) => console.error(error));
     // Thông tin lịch sử nhập thuốc
     fetch(
-      `https://nhathuoclt99pharmacity.click/quan-ly/thuoc-va-loai-thuoc/thuoc/${id}/lich-su-nhap-thuoc`
+      `https://khoaluanquanlynhathuoclt99.lol/quan-ly/thuoc-va-loai-thuoc/thuoc/${id}/lich-su-nhap-thuoc`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -116,7 +116,7 @@ const ContentChiTietThuoc = (props) => {
     if (typeof id === "string") {
       try {
         const response = await fetch(
-          `https://nhathuoclt99pharmacity.click/nhan-vien/thuoc-va-loai-thuoc/thuoc/${id}`
+          `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/thuoc-va-loai-thuoc/thuoc/${id}`
         );
         const data = await response.json();
         console.log(data);
@@ -154,7 +154,7 @@ const ContentChiTietThuoc = (props) => {
     // chỉnh sửa thông tin  thuốc
 
     fetch(
-      `https://nhathuoclt99pharmacity.click/quan-ly/thuoc-va-loai-thuoc/loai-thuoc/${loaiThuocSelected}/thuoc/${id}`,
+      `https://khoaluanquanlynhathuoclt99.lol/quan-ly/thuoc-va-loai-thuoc/loai-thuoc/${loaiThuocSelected}/thuoc/${id}`,
       {
         method: "PUT",
         headers: {
@@ -205,7 +205,7 @@ const ContentChiTietThuoc = (props) => {
         : { maNuoc: selectedNSX };
 
     fetch(
-      `https://nhathuoclt99pharmacity.click/quan-ly/thuoc-va-loai-thuoc/thuoc/${id}/nhap-thuoc`,
+      `https://khoaluanquanlynhathuoclt99.lol/quan-ly/thuoc-va-loai-thuoc/thuoc/${id}/nhap-thuoc`,
       {
         method: "POST",
         headers: {

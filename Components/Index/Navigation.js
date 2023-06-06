@@ -93,7 +93,7 @@ const Navigation = () => {
     if (searchTerm.length > 0) {
       const newTimeoutId = setTimeout(() => {
         fetch(
-          `https://nhathuoclt99pharmacity.click/khach-hang/xem-thuoc/tim-thuoc?keyword=${encodeURIComponent(
+          `https://khoaluanquanlynhathuoclt99.lol/khach-hang/xem-thuoc/tim-thuoc?keyword=${encodeURIComponent(
             searchTerm
           )}`
         )
