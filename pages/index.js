@@ -25,7 +25,7 @@ const index = (props) => {
 export async function getServerSideProps() {
   // Fetch data from an API or perform any other async operations
   const response = await fetch(
-    "https://nhathuoclt99pharmacity.click/khach-hang/xem-thuoc/danh-sach-thuoc"
+    "https://khoaluanquanlynhathuoclt99.lol/khach-hang/xem-thuoc/danh-sach-thuoc"
   );
   const data = await response.json();
 
