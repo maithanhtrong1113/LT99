@@ -2,7 +2,7 @@ import { toast } from "react-toastify";
 
 export const getAllLoaiThuoc = async () => {
   const response = await fetch(
-    `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/thuoc-va-loai-thuoc/loai-thuoc/`
+    `https://nhathuoclt99pharmacity.click/nhan-vien/thuoc-va-loai-thuoc/loai-thuoc/`
   );
   const data = await response.json();
   return data;
@@ -10,7 +10,7 @@ export const getAllLoaiThuoc = async () => {
 
 export const themLoaiThuoc = async (data) => {
   const response = await fetch(
-    "https://khoaluanquanlynhathuoclt99.lol/quan-ly/thuoc-va-loai-thuoc",
+    "https://nhathuoclt99pharmacity.click/quan-ly/thuoc-va-loai-thuoc",
     {
       method: "POST",
       headers: {
@@ -40,7 +40,7 @@ export const themLoaiThuoc = async (data) => {
 };
 export const xoaLoaiThuoc = async (id) => {
   const res = await fetch(
-    `https://khoaluanquanlynhathuoclt99.lol/quan-ly/thuoc-va-loai-thuoc/loai-thuoc/${id}`,
+    `https://nhathuoclt99pharmacity.click/quan-ly/thuoc-va-loai-thuoc/loai-thuoc/${id}`,
     {
       method: "DELETE",
       headers: {
@@ -69,7 +69,7 @@ export const xoaLoaiThuoc = async (id) => {
 };
 export const chinhSuaThuoc = async (data) => {
   const response = await fetch(
-    `https://khoaluanquanlynhathuoclt99.lol/quan-ly/thuoc-va-loai-thuoc/loai-thuoc/${data.maLoai}`,
+    `https://nhathuoclt99pharmacity.click/quan-ly/thuoc-va-loai-thuoc/loai-thuoc/${data.maLoai}`,
     {
       method: "PUT",
       headers: {
@@ -99,7 +99,7 @@ export const chinhSuaThuoc = async (data) => {
 };
 export const getAllLoaiThuocKhach = async () => {
   const response = await fetch(
-    `https://khoaluanquanlynhathuoclt99.lol/khach-hang/xem-thuoc/loai-thuoc/`
+    `https://nhathuoclt99pharmacity.click/khach-hang/xem-thuoc/loai-thuoc/`
   );
   const data = await response.json();
   return data.slice(0, 6);

@@ -16,23 +16,11 @@ const index = (props) => {
         <ToastContainer />
         <GoTopPage />
         <Navigation />
-        <Content data={props.data} />
+        <Content />
         <Footer />
       </LoadingScreen>
     </Fragment>
   );
 };
-export async function getServerSideProps() {
-  // Fetch data from an API or perform any other async operations
-  const response = await fetch(
-    "https://khoaluanquanlynhathuoclt99.lol/khach-hang/xem-thuoc/danh-sach-thuoc"
-  );
-  const data = await response.json();
 
-  return {
-    props: {
-      data,
-    },
-  };
-}
 export default index;

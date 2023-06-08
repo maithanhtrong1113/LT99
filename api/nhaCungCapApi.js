@@ -1,7 +1,7 @@
 import { toast } from "react-toastify";
 export const getAllNhaCungCap = async () => {
   const response = await fetch(
-    `https://khoaluanquanlynhathuoclt99.lol/quan-ly/nha-cung-cap/`
+    `https://nhathuoclt99pharmacity.click/quan-ly/nha-cung-cap/`
   );
   if (response.status === 204) return [];
   const data = await response.json();
@@ -10,7 +10,7 @@ export const getAllNhaCungCap = async () => {
 };
 export const themNhaCungCap = async (data) => {
   const response = await fetch(
-    "https://khoaluanquanlynhathuoclt99.lol/quan-ly/nha-cung-cap/",
+    "https://nhathuoclt99pharmacity.click/quan-ly/nha-cung-cap/",
     {
       method: "POST",
       headers: {
@@ -41,7 +41,7 @@ export const themNhaCungCap = async (data) => {
 };
 export const xoaNhaCungCap = async (id) => {
   const res = await fetch(
-    `https://khoaluanquanlynhathuoclt99.lol/quan-ly/nha-cung-cap/${id}`,
+    `https://nhathuoclt99pharmacity.click/quan-ly/nha-cung-cap/${id}`,
     {
       method: "DELETE",
       headers: {
@@ -67,7 +67,7 @@ export const xoaNhaCungCap = async (id) => {
 };
 export const chinhSuaNhaCungCap = async (data) => {
   const response = await fetch(
-    `https://khoaluanquanlynhathuoclt99.lol/quan-ly/nha-cung-cap/${data.maNhaCungCap}`,
+    `https://nhathuoclt99pharmacity.click/quan-ly/nha-cung-cap/${data.maNhaCungCap}`,
     {
       method: "PUT",
       headers: {
@@ -98,7 +98,7 @@ export const chinhSuaNhaCungCap = async (data) => {
 };
 export const getAllLoThuocFromNhaCungCap = async (maNhaCungCap) => {
   const response = await fetch(
-    `https://khoaluanquanlynhathuoclt99.lol/quan-ly/nha-cung-cap/${maNhaCungCap}/xem-lo-thuoc-da-cung-cap`
+    `https://nhathuoclt99pharmacity.click/quan-ly/nha-cung-cap/${maNhaCungCap}/xem-lo-thuoc-da-cung-cap`
   );
   if (response.status === 204) return [];
   const data = await response.json();

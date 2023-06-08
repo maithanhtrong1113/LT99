@@ -1,7 +1,7 @@
 import { toast } from "react-toastify";
 export const getAllNuocSanXuat = async () => {
   const response = await fetch(
-    `https://khoaluanquanlynhathuoclt99.lol/quan-ly/nuoc-san-xuat/`
+    `https://nhathuoclt99pharmacity.click/quan-ly/nuoc-san-xuat/`
   );
   if (response.status === 204) return [];
   const data = await response.json();
@@ -10,7 +10,7 @@ export const getAllNuocSanXuat = async () => {
 };
 export const themNuocSanXuat = async (data) => {
   const response = await fetch(
-    "https://khoaluanquanlynhathuoclt99.lol/quan-ly/nuoc-san-xuat",
+    "https://nhathuoclt99pharmacity.click/quan-ly/nuoc-san-xuat",
     {
       method: "POST",
       headers: {
@@ -39,7 +39,7 @@ export const themNuocSanXuat = async (data) => {
 };
 export const xoaNuocSanXuat = async (id) => {
   const res = await fetch(
-    `https://khoaluanquanlynhathuoclt99.lol/quan-ly/nuoc-san-xuat/${id}`,
+    `https://nhathuoclt99pharmacity.click/quan-ly/nuoc-san-xuat/${id}`,
     {
       method: "DELETE",
       headers: {
@@ -65,7 +65,7 @@ export const xoaNuocSanXuat = async (id) => {
 };
 export const chinhSuaNuocSanXuat = async (data) => {
   const response = await fetch(
-    `https://khoaluanquanlynhathuoclt99.lol/quan-ly/nuoc-san-xuat/${data.maNuoc}`,
+    `https://nhathuoclt99pharmacity.click/quan-ly/nuoc-san-xuat/${data.maNuoc}`,
     {
       method: "PUT",
       headers: {

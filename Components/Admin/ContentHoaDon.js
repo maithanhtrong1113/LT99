@@ -51,7 +51,7 @@ const ContentHoaDon = () => {
     if (searchTerm.length > 0) {
       const newTimeoutId = setTimeout(() => {
         fetch(
-          `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/hoa-don/tim-hoa-don-theo-khach-hang?keyword=${encodeURIComponent(
+          `https://nhathuoclt99pharmacity.click/nhan-vien/hoa-don/tim-hoa-don-theo-khach-hang?keyword=${encodeURIComponent(
             searchTerm
           )}`
         )

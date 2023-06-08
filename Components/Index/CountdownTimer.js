@@ -9,7 +9,7 @@ function CountdownTimer() {
   const [dsThuoc, setDsThuoc] = useState([]);
   useEffect(() => {
     fetch(
-      "https://khoaluanquanlynhathuoclt99.lol/khach-hang/xem-thuoc/danh-sach-thuoc"
+      "https://nhathuoclt99pharmacity.click/khach-hang/xem-thuoc/danh-sach-thuoc"
     )
       .then((response) => {
         if (!response.ok) {

@@ -39,7 +39,7 @@ const ContentKhachHang = () => {
     if (searchTerm1.length > 0) {
       const newTimeoutId1 = setTimeout(() => {
         fetch(
-          `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/quan-ly-khach-hang/tim-khach-hang?keyword=${encodeURIComponent(
+          `https://nhathuoclt99pharmacity.click/nhan-vien/quan-ly-khach-hang/tim-khach-hang?keyword=${encodeURIComponent(
             searchTerm1
           )}`
         )
@@ -54,7 +54,7 @@ const ContentKhachHang = () => {
       setTimeoutId1(newTimeoutId1);
     } else {
       fetch(
-        `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/quan-ly-khach-hang/danh-sach-khach-hang`
+        `https://nhathuoclt99pharmacity.click/nhan-vien/quan-ly-khach-hang/danh-sach-khach-hang`
       )
         .then((response) => response.json())
         .then((data) => {
@@ -67,7 +67,7 @@ const ContentKhachHang = () => {
   const changein4Customer = (data) => {
     console.log(data);
     fetch(
-      `https://khoaluanquanlynhathuoclt99.lol/khach-hang/thong-tin-khach-hang/${data.maKhachHang}/cap-nhat-thong-tin-ca-nhan`,
+      `https://nhathuoclt99pharmacity.click/khach-hang/thong-tin-khach-hang/${data.maKhachHang}/cap-nhat-thong-tin-ca-nhan`,
       {
         method: "PUT",
         headers: {

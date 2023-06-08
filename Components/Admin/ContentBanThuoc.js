@@ -86,7 +86,7 @@ const ContentBanThuoc = () => {
         //all
         if (optionThuoc === "Tất cả") {
           fetch(
-            `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/thuoc-va-loai-thuoc/tim-thuoc?keyword=${encodeURIComponent(
+            `https://nhathuoclt99pharmacity.click/nhan-vien/thuoc-va-loai-thuoc/tim-thuoc?keyword=${encodeURIComponent(
               searchTerm
             )}`
           )
@@ -99,7 +99,7 @@ const ContentBanThuoc = () => {
             });
         } else if (optionThuoc === "Chỉ thuốc kê đơn") {
           fetch(
-            `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/thuoc-va-loai-thuoc/danh-sach-thuoc-ke-don?keyword=${encodeURIComponent(
+            `https://nhathuoclt99pharmacity.click/nhan-vien/thuoc-va-loai-thuoc/danh-sach-thuoc-ke-don?keyword=${encodeURIComponent(
               searchTerm
             )}`
           )
@@ -120,7 +120,7 @@ const ContentBanThuoc = () => {
             });
         } else if (optionThuoc === "Chỉ thuốc không kê đơn") {
           fetch(
-            `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/thuoc-va-loai-thuoc/danh-sach-thuoc-khong-ke-don?keyword=${encodeURIComponent(
+            `https://nhathuoclt99pharmacity.click/nhan-vien/thuoc-va-loai-thuoc/danh-sach-thuoc-khong-ke-don?keyword=${encodeURIComponent(
               searchTerm
             )}`
           )
@@ -158,7 +158,7 @@ const ContentBanThuoc = () => {
     if (searchTerm1.length > 0) {
       const newTimeoutId1 = setTimeout(() => {
         fetch(
-          `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/quan-ly-khach-hang/tim-khach-hang?keyword=${encodeURIComponent(
+          `https://nhathuoclt99pharmacity.click/nhan-vien/quan-ly-khach-hang/tim-khach-hang?keyword=${encodeURIComponent(
             searchTerm1
           )}`
         )
@@ -282,7 +282,7 @@ const ContentBanThuoc = () => {
         dsXuat
       );
       fetch(
-        `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/hoa-don/lap-hoa-don-theo-toa`,
+        `https://nhathuoclt99pharmacity.click/nhan-vien/hoa-don/lap-hoa-don-theo-toa`,
         {
           method: "POST",
           headers: {
@@ -327,7 +327,7 @@ const ContentBanThuoc = () => {
       });
       console.log(idNhanVien, dsXuat);
       fetch(
-        `https://khoaluanquanlynhathuoclt99.lol/nhan-vien/hoa-don/lap-hoa-don-khong-theo-toa`,
+        `https://nhathuoclt99pharmacity.click/nhan-vien/hoa-don/lap-hoa-don-khong-theo-toa`,
         {
           method: "POST",
           headers: {
@@ -379,7 +379,7 @@ const ContentBanThuoc = () => {
     }
 
     fetch(
-      "https://khoaluanquanlynhathuoclt99.lol/nhan-vien/quan-ly-khach-hang/khach-hang",
+      "https://nhathuoclt99pharmacity.click/nhan-vien/quan-ly-khach-hang/khach-hang",
       {
         method: "POST",
         headers: {

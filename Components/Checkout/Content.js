@@ -47,7 +47,7 @@ const Content = () => {
       });
       console.log(thongTinKhachHang.diaChi);
       fetch(
-        "https://khoaluanquanlynhathuoclt99.lol/khach-hang/don-hang/tao-don-hang",
+        "https://nhathuoclt99pharmacity.click/khach-hang/don-hang/tao-don-hang",
         {
           method: "POST",
           headers: {

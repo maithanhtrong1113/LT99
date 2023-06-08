@@ -16,25 +16,25 @@ const ListCard = (props) => {
       },
     },
   };
-  const [dsThuoc, setDsThuoc] = useState(props.data.slice(0, 4));
-  // useEffect(() => {
-  //   fetch(
-  //     "https://khoaluanquanlynhathuoclt99.lol/khach-hang/xem-thuoc/danh-sach-thuoc"
-  //   )
-  //     .then((response) => {
-  //       if (!response.ok) {
-  //         throw new Error("Network response was not ok");
-  //       }
-  //       return response.json();
-  //     })
-  //     .then((results) => {
-  //       results = results.filter((thuoc) => thuoc.thuoc.soLuong > 0);
-  //       setDsThuoc(results.slice(0, 4));
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching data:", error);
-  //     });
-  // }, []);
+  const [dsThuoc, setDsThuoc] = useState([]);
+  useEffect(() => {
+    fetch(
+      "https://nhathuoclt99pharmacity.click/khach-hang/xem-thuoc/danh-sach-thuoc"
+    )
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((results) => {
+        results = results.filter((thuoc) => thuoc.thuoc.soLuong > 0);
+        setDsThuoc(results.slice(0, 4));
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
   return (
     <Fragment>
       <motion.div

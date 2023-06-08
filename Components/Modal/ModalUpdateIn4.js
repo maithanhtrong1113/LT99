@@ -31,7 +31,7 @@ function ModalUpdateIn4(props) {
   useEffect(() => {
     const id = localStorage.getItem("id");
     fetch(
-      `https://khoaluanquanlynhathuoclt99.lol/quan-ly/nhan-vien/xem-thong-tin-nhan-vien/${id}`
+      `https://nhathuoclt99pharmacity.click/quan-ly/nhan-vien/xem-thong-tin-nhan-vien/${id}`
     )
       .then((response) => response.json())
       .then((data) => {

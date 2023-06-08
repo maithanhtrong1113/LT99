@@ -30,7 +30,7 @@ const ContentNhaCungCap = () => {
     if (searchTerm1.length > 0) {
       const newTimeoutId1 = setTimeout(() => {
         fetch(
-          `https://khoaluanquanlynhathuoclt99.lol/quan-ly/nha-cung-cap/tim-nha-cung-cap?keyword=${encodeURIComponent(
+          `https://nhathuoclt99pharmacity.click/quan-ly/nha-cung-cap/tim-nha-cung-cap?keyword=${encodeURIComponent(
             searchTerm1
           )}`
         )

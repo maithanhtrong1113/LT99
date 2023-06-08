@@ -63,7 +63,7 @@ const DoanhThuTheoNgay = () => {
       const StringNgayBatDau = ngayBatDau.toISOString().slice(0, 10);
       const StringNgayKetThuc = ngayKetThuc.toISOString().slice(0, 10);
       fetch(
-        `https://khoaluanquanlynhathuoclt99.lol/quan-ly/thong-ke/thong-ke-doanh-thu-theo-ngay?ngayBatDau=${StringNgayBatDau}&ngayKetThuc=${StringNgayKetThuc}`
+        `https://nhathuoclt99pharmacity.click/quan-ly/thong-ke/thong-ke-doanh-thu-theo-ngay?ngayBatDau=${StringNgayBatDau}&ngayKetThuc=${StringNgayKetThuc}`
       )
         .then((response) => response.json())
         .then((data) => {
